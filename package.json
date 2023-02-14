@@ -1,0 +1,20 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rock-Script/scripts.git"
+  },
+  "author": "Yogesh Murdeshwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rock-Script/scripts/issues"
+  },
+  "homepage": "https://github.com/Rock-Script/scripts#readme",
+  "dependencies": {
+    "template": "./template"
+  }
+}

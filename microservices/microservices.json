@@ -1,0 +1,22 @@
+[
+    {
+        "name": "auth",
+        "url": "http://localhost:3001"
+    },
+    {
+        "name": "members",
+        "url": "http://localhost:3002"
+    },
+    {
+        "name": "exams",
+        "url": "http://localhost:3003"
+    },
+    {
+        "name": "notifications",
+        "url": "http://localhost:3004"
+    },
+    {
+        "name": "institute",
+        "url": "http://localhost:3005"
+    }
+]
