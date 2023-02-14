@@ -15,7 +15,7 @@ const init = () => {
         Logger.info(`Mongo initialized...`);
     });
     setTimeout(() => {
-        // require('./microservices/microservices').start()
+        require('./microservices/microservices').start()
         require('./email_templates/email_templates').start()
     }, 3000);
 }
