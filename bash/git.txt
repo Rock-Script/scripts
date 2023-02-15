@@ -1,6 +1,9 @@
 eval `ssh-agent`
 ssh-add /e/Work/.ssh/rockscript_bitbucket
 
+eval `ssh-agent`
+ssh-add ssh_key
+
 for D in */; do cd ${D}; echo \"${D}\";  git pull; cd ..; done;
 for D in */; do cd ${D}; echo \"${D}\";  git submodule update --init --recursive --remote; cd ..; done;
 for D in */; do cd ${D}; echo \"${D}\";  git submodule update; cd ..; done;
@@ -14,9 +17,18 @@ for D in */; do cd ${D}/template; echo \"${D}/template\"; git pull; cd ..; cd ..
 for D in */; 
     do cd ${D}/;
         echo \"${D}\"; 
+        rm package-lock.json;
+        git pull;
+        git submodule update;
+        npm i;
+        cd ..; 
+done;
+
+for D in */; 
+    do cd ${D}/;
+        echo \"${D}\"; 
         git pull;
         git add template; 
-        git add package-lock.json; 
         git commit -m 'updating template'
         git push;
         cd ..; 
