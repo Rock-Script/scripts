@@ -5,11 +5,15 @@
     },
     {
         "name": "web_signup_verify",
-        "url": "http://localhost:3000/signup_verify"
+        "url": "http://localhost:3000/signup-verify"
     },
     {
         "name": "auth",
         "url": "http://localhost:3001"
+    },
+    {
+        "name": "auth_create_user",
+        "url": "http://localhost:3001/auth/register"
     },
     {
         "name": "members",
